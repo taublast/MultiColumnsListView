@@ -3,7 +3,7 @@ Xamarin.Forms subclassed ListView for a multi-columns look
 
 ## What is it?
 
-#### A Xamarin.Forms subclassed ListView along with some other classes to create a milti-columns recyclable ListView.
+A Xamarin.Forms subclassed ListView along with some other classes to create a milti-columns recyclable ListView.
 
 The project was created using a standart Xamarin.Forms Shell template, then adding custom controls inside. 
 No custom renderers, just pure Forms.
