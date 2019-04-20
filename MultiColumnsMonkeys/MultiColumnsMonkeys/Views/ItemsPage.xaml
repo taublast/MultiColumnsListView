@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:MultiColumnsMonkeys.Controls;assembly=MultiColumnsMonkeys"
+             x:Class="MultiColumnsMonkeys.Views.ItemsPage"
+              Title="{Binding Title}"
+             x:Name="BrowseItemsPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Change Cols" Clicked="Columns_Clicked" />
+        <ToolbarItem Text="Add" Clicked="AddItem_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <StackLayout>
+
+        <controls:MonkeysListView x:Name="ItemsListView"
+                ItemsSource="{Binding Items}"
+                Columns="{Binding Columns}"
+                VerticalOptions="FillAndExpand"
+                RefreshCommand="{Binding LoadItemsCommand}"
+                IsPullToRefreshEnabled="true"
+                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+            
+                ItemSelected="OnItemSelected">
+        
+
+        </controls:MonkeysListView>
+    </StackLayout>
+    
+</ContentPage>

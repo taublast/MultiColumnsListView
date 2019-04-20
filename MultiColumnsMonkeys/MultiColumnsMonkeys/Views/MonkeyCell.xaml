@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xam:XamCell xmlns="http://xamarin.com/schemas/2014/forms" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:xam="clr-namespace:AppoMobi.Xam;assembly=MultiColumnsMonkeys"
+
+            Margin="0.5"
+            Spacing="0"
+            VerticalOptions="Fill"
+            BackgroundColor="White"
+
+            x:Class="MultiColumnsMonkeys.Views.CellMonkey">
+
+    <Grid  x:Name="MainGrid"
+        Margin="8"
+        MinimumHeightRequest="66"
+        ColumnSpacing="8">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="66" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Image VerticalOptions="Start"
+               BackgroundColor="WhiteSmoke"
+        HeightRequest="66"
+        WidthRequest="66"
+        Aspect="AspectFill"
+        Source="{Binding Image}"/>
+
+        <StackLayout x:Name="MainStack"            
+            Grid.Column="1">
+
+            <Label FontAttributes="Bold"
+           Text="{Binding Text}"/>
+            <Label 
+           Text="{Binding Location}" x:Name="LabelLocation"/>
+
+</StackLayout>
+
+    </Grid>
+
+    <Label        
+           Margin="8,0,8,8"
+           FontSize="Micro"
+           Text="{Binding Description}"/>
+
+</xam:XamCell>

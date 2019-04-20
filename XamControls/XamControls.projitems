@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>265f7aa5-85d9-4429-975f-64220c7224c3</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>AppoMobi.Xam</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Extensions\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\ILinkedItemWithPosition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MultiColumnsTemplateSelector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\XamCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MultiColumnsCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\XamListView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\XamExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\XamObservableCollection.cs" />
+  </ItemGroup>
+</Project>
