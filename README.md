@@ -1,5 +1,5 @@
 # MultiColumnsListView
-Xamarin.Forms subclassed ListView for multi-columns look
+Xamarin.Forms subclassed ListView for a multi-columns look
 
 ## What is it?
 
