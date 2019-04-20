@@ -3,16 +3,22 @@ Xamarin.Forms subclassed ListView for multi-columns look
 
 ## What is it?
 
-A Xamarin.Forms subclassed ListView along with some other classes to create a milti-columns recyclable ListView.
-
-<p align="center">
-  <img height="600" src="http://appomobi.com/images/git/Screenshot_1555760450.jpg">
-</p>
+#### A Xamarin.Forms subclassed ListView along with some other classes to create a milti-columns recyclable ListView.
 
 The project was created using a standart Xamarin.Forms Shell template, then adding custom controls inside. 
 No custom renderers, just pure Forms.
 
 Microsoft.CSharp nuget was added for dynamic extensions but you can adapt to your hardcoded classes and remove it.
+
+<p align="center">
+  <img height="400" src="http://appomobi.com/images/git/Screenshot_1555775167.jpg">
+  <img height="400" src="http://appomobi.com/images/git/Screenshot_1555760450.jpg">
+  <img height="400" src="http://appomobi.com/images/git/Screenshot_1555776853.jpg">
+</p>
+
+<p align="center">
+  Try click on "Change Cols" it will switch 1-2-3 columns, "Add" button works too..
+</p>
 
 ### How is it done
 
