@@ -1,5 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 using MultiColumnsMonkeys.Models;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace MultiColumnsMonkeys.Views
@@ -18,19 +19,6 @@ namespace MultiColumnsMonkeys.Views
 
             var item = BindingContext as Item;
             if (item == null) return;
-
-            if (Columns > 2)
-            {
-                MainGrid.Children.Add(MainStack, 0, 1);
-
-            }
-            else
-            {
-                MainGrid.Children.Add(MainStack, 1, 0);
-
-
-            }
-
 
         }
     }

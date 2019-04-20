@@ -5,48 +5,51 @@
 
             Margin="0.5"
             Spacing="0"
-            VerticalOptions="Fill"
+            
+            VerticalOptions="FillAndExpand"
+
             BackgroundColor="White"
 
             x:Class="MultiColumnsMonkeys.Views.CellMonkey">
 
-    <Grid  x:Name="MainGrid"
-        Margin="8"
-        MinimumHeightRequest="66"
-        ColumnSpacing="8">
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="66" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
+    <StackLayout Orientation="Horizontal" VerticalOptions="Start" Margin="6">
 
-        <Image VerticalOptions="Start"
-               BackgroundColor="WhiteSmoke"
-        HeightRequest="66"
-        WidthRequest="66"
-        Aspect="AspectFill"
-        Source="{Binding Image}"/>
+    <Image VerticalOptions="Start"
+           x:Name="MainImage"
+           BackgroundColor="WhiteSmoke"
+           HeightRequest="66"
+           WidthRequest="66"
+           Aspect="AspectFill"
+           Source="{Binding Image}"/>
 
-        <StackLayout x:Name="MainStack"            
-            Grid.Column="1">
 
-            <Label FontAttributes="Bold"
-           Text="{Binding Text}"/>
-            <Label 
-           Text="{Binding Location}" x:Name="LabelLocation"/>
+    <StackLayout x:Name="MainStack"            
+                 VerticalOptions="Start">
+
+        <Label 
+            x:Name="LabelTitle"
+            HorizontalOptions="Fill"
+            FontAttributes="Bold"
+            Text="{Binding Text}"/>
+
+        <Label 
+            HorizontalOptions="Fill"
+            Text="{Binding Location}" 
+            x:Name="LabelLocation"/>
+
+    </StackLayout>
+
 
 </StackLayout>
 
-    </Grid>
 
     <Label        
-           Margin="8,0,8,8"
+           Margin="7,0,7,6"
            FontSize="Micro"
            Text="{Binding Description}"/>
+
+    <ContentView VerticalOptions="Fill"/>
 
 </xam:XamCell>
