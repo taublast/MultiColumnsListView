@@ -20,6 +20,8 @@ namespace MultiColumnsMonkeys.Views
             var item = BindingContext as Item;
             if (item == null) return;
 
+
+            // todo can setup your sell at will
         }
     }
 }
