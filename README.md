@@ -9,9 +9,10 @@ A Xamarin.Forms subclassed ListView along with some other classes to create a mi
   <img height="600" src="http://appomobi.com/images/git/Screenshot_1555760450.jpg">
 </p>
 
-The project was created with a standart Xamarin.Forms Shell template, then adding custom controls inside. No custom renderers, just pure Forms.
+The project was created using a standart Xamarin.Forms Shell template, then adding custom controls inside. 
+No custom renderers, just pure Forms.
 
-Microsoft.CSharp nuget was added for some dynamic extensions but you can adapt to your hardcoded classes and remove it.
+Microsoft.CSharp nuget was added for dynamic extensions but you can adapt to your hardcoded classes and remove it.
 
 ### How is it done
 
@@ -31,8 +32,8 @@ The resulting look must be the following (2 columns):
 ## ToDo: 
 
 Explain the code, maybe create a blog post. 
-Until the feel free to play with the source code, custom controls are in a shared project  so you can include them easily in your own soluctions.
-The implementation is in the cross-platform project, take a look i have left some comments inside.
+Until then please feel free to play with the source code, custom controls are in a shared project  so you can include them easily in your own soluctions.
+The implementation is in the cross-platform project, please take a look i have left some comments inside.
 
 ## License
 
