@@ -42,6 +42,13 @@ The resulting look must be the following (2 columns):
 
 …
 
+## The ListView
+
+You will notice that in the re-subclassed MonkeysListView we could set the caching strategy at will upon platform.
+An important note is that with our custom data selector you cannot use RecycleElementAndDataTemplate. 
+Another note is that you cannot use RecycleElement when you use uneven rows otherwise it will create a junky effect, but with even rows of fixed equal height it’s no problem. In this example we had uneven rows so we used RetainElement. 
+
+
 ## ToDo: 
 
 Explain the code, maybe create a blog post. 
