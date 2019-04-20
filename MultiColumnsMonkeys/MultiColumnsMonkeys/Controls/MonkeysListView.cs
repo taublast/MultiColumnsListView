@@ -32,18 +32,12 @@ namespace MultiColumnsMonkeys.Controls
             {
 
                 case Device.Android:
-                    return ListViewCachingStrategy.RetainElement;
+                    return ListViewCachingStrategy.RetainElement; //RecycleElement
                 case Device.iOS:
-                    return ListViewCachingStrategy.RetainElement;
+                    return ListViewCachingStrategy.RetainElement; //RecycleElement
                 default:
-                    return ListViewCachingStrategy.RetainElement;
+                    return ListViewCachingStrategy.RetainElement; //RecycleElement
 
-                //case Device.Android:
-                //    return ListViewCachingStrategy.RetainElement;// RecycleElementAndDataTemplate;
-                //case Device.iOS:
-                //    return ListViewCachingStrategy.RetainElement;//RecycleElement;
-                //default:
-                //    return ListViewCachingStrategy.RetainElement;
             }
         }
 
