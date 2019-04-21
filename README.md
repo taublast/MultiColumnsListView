@@ -61,10 +61,19 @@ The implementation is in the cross-platform project, please take a look i have l
 The project was created using a standart Xamarin.Forms Shell template, then adding custom controls inside. 
 Microsoft.CSharp nuget was added for dynamic extensions but you can adapt to your hardcoded classes and remove it.
 
+
 ## Known bugs
 
 Not the ListView bug, but the app one: list page content sometimes goes a bit behind the bottom navigation Tabbar, please tell me if you know how to fix this. This hapens randomly. The similar case was that on ios it went behind the NavBar but was fixed with a 'Shell.SetSetPaddingInsets(this, true);' might be somewhat similar to this, but related to the new buttom tabedbar..
 
+
+## Stay Tuned
+
+For even more Xamarin content: https://twitter.com/nickkovalsky
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
