@@ -9,7 +9,7 @@ No custom renderers, just pure Forms, tested on iOS and Android.
 <p align="center">
   <img height="400" src="https://github.com/taublast/MultiColumnsListView/blob/master/Screenshot_1555781169.jpg">
   <img height="400" src="https://github.com/taublast/MultiColumnsListView/blob/master/Screenshot_1555781171.jpg">
-  <img height="400" src="https://github.com/taublast/MultiColumnsListView/blob/master/Screenshot_1555781162.jpg">
+  <img height="400" src="https://github.com/taublast/MultiColumnsListView/blob/master/Screenshot_1555781163.jpg">
 </p>
 
 <p align="center">
