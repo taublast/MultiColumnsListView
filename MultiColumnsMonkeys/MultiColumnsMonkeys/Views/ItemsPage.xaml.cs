@@ -21,6 +21,12 @@ namespace MultiColumnMonkeys.Views
         {
             InitializeComponent();
 
+
+            //without this on iOS ListView is UNDER Shell NavBar
+            // https://github.com/xamarin/Xamarin.Forms/issues/4752
+            Shell.SetSetPaddingInsets(this, true);
+
+
             BindingContext = viewModel = new ItemsViewModel(1);
            
         }
