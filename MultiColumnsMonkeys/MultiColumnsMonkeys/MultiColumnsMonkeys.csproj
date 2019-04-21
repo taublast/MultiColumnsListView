@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceAssemblyReference>true</ProduceAssemblyReference>
+    <AssemblyName>MultiColumnMonkeys</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -17,12 +18,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\MonkeyCellCentered.xaml.cs">
+      <DependentUpon>MonkeyCellCentered.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\MonkeyCell.xaml.cs">
       <DependentUpon>MonkeyCell.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Views\MonkeyCellCentered.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\MonkeyCell.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

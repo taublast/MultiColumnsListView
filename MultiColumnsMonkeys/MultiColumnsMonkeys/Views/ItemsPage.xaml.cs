@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-using MultiColumnsMonkeys.Models;
-using MultiColumnsMonkeys.Views;
-using MultiColumnsMonkeys.ViewModels;
+using MultiColumnMonkeys.Models;
+using MultiColumnMonkeys.Views;
+using MultiColumnMonkeys.ViewModels;
 
-namespace MultiColumnsMonkeys.Views
+namespace MultiColumnMonkeys.Views
 {
     public partial class ItemsPage : ContentPage
     {
@@ -39,7 +39,8 @@ namespace MultiColumnsMonkeys.Views
 
         async void AddItem_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NavigationPage(new NewItemPage()));
+            await viewModel.OpenPageNewItem(Navigation);
+            //await Navigation.PushModalAsync(new NavigationPage(new NewItemPage()));
         }
 
         async void Columns_Clicked(object sender, EventArgs e)

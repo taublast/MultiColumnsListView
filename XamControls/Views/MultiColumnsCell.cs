@@ -23,7 +23,6 @@ namespace AppoMobi.Xam
                 ColumnSpacing = 0, 
                 VerticalOptions = LayoutOptions.Fill
             };
-       //     _grid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Auto) });
             View = _grid;
         }
    
@@ -64,7 +63,7 @@ namespace AppoMobi.Xam
                 _grid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(myWidth, GridUnitType.Star) });
             }
 
-            var ItemTemplate = new DataTemplate(_childCell);
+            var itemTemplate = GetColumnCellTemplate(_list.Columns); //new DataTemplate(_childCell));
             var thisItem = item;
             for (int col = 0; col < _list.Columns; col++)
             {
@@ -74,7 +73,7 @@ namespace AppoMobi.Xam
                     //todo
                     break;
                 }
-                var view = (View)ItemTemplate.CreateContent();
+                var view = (View)itemTemplate.CreateContent();
                 if (view is XamCell)
                 {
                     ((XamCell) view).Columns = _list.Columns;
@@ -87,6 +86,11 @@ namespace AppoMobi.Xam
                 //Task.Delay(1);
             }
             SetupCell();
+        }
+
+        public virtual DataTemplate GetColumnCellTemplate(int columns)
+        {
+            return new DataTemplate(_childCell);
         }
     }
  

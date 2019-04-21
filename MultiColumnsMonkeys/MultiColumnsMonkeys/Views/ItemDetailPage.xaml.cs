@@ -3,10 +3,10 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-using MultiColumnsMonkeys.Models;
-using MultiColumnsMonkeys.ViewModels;
+using MultiColumnMonkeys.Models;
+using MultiColumnMonkeys.ViewModels;
 
-namespace MultiColumnsMonkeys.Views
+namespace MultiColumnMonkeys.Views
 {
     public partial class ItemDetailPage : ContentPage
     {

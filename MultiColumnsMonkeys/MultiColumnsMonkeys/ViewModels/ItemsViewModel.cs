@@ -5,16 +5,19 @@ using System.Threading.Tasks;
 using AppoMobi.Xam;
 using Xamarin.Forms;
 
-using MultiColumnsMonkeys.Models;
-using MultiColumnsMonkeys.Views;
+using MultiColumnMonkeys.Models;
+using MultiColumnMonkeys.Views;
 
-namespace MultiColumnsMonkeys.ViewModels
+namespace MultiColumnMonkeys.ViewModels
 {
+
+
     public class ItemsViewModel : BaseViewModel
     {
         public XamObservableCollection<Item> Items { get; set; }
         public Command LoadItemsCommand { get; set; }
 
+        protected int IndexForAdd { get; set; } //not needed just a visual helper
 
         private int _Columns;
         public int Columns
@@ -29,6 +32,13 @@ namespace MultiColumnsMonkeys.ViewModels
                 }
             }
         }
+
+        public async Task OpenPageNewItem(INavigation navigation)
+        {
+            IndexForAdd++;
+            await navigation.PushModalAsync(new NavigationPage(new NewItemPage(IndexForAdd)));
+        }
+
 
         public ItemsViewModel(int columns)
         {

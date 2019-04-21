@@ -3,7 +3,7 @@ using System.Windows.Input;
 
 using Xamarin.Forms;
 
-namespace MultiColumnsMonkeys.ViewModels
+namespace MultiColumnMonkeys.ViewModels
 {
     public class AboutViewModel : BaseViewModel
     {

@@ -4,22 +4,23 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-using MultiColumnsMonkeys.Models;
+using MultiColumnMonkeys.Models;
 
-namespace MultiColumnsMonkeys.Views
+namespace MultiColumnMonkeys.Views
 {
     public partial class NewItemPage : ContentPage
     {
         public Item Item { get; set; }
 
-        public NewItemPage()
+        public NewItemPage(int index)
         {
             InitializeComponent();
 
             Item = new Item
             {
-                Text = "Item name",
-                Description = "This is an item description."
+                Text = $" Item name {index}",
+                Description = $"{index} This is an item description.",
+                Location="demo"
             };
 
             BindingContext = this;

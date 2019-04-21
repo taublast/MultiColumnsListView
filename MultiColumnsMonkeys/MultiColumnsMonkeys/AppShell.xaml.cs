@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace MultiColumnsMonkeys
+namespace MultiColumnMonkeys
 {
     public partial class AppShell : Xamarin.Forms.Shell
     {

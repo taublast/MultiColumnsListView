@@ -10,13 +10,15 @@
 
             BackgroundColor="White"
 
-            x:Class="MultiColumnMonkeys.Views.CellMonkey">
+            x:Class="MultiColumnMonkeys.Views.MonkeyCellCentered">
 
 
 
-    <StackLayout Orientation="Horizontal" VerticalOptions="Start" Margin="6">
+    <StackLayout Orientation="Vertical" VerticalOptions="Start" Margin="6">
 
-    <Image VerticalOptions="Start"
+    <Image 
+        HorizontalOptions="Center"
+        VerticalOptions="Start"
            x:Name="MainImage"
            BackgroundColor="WhiteSmoke"
            HeightRequest="66"
@@ -26,16 +28,19 @@
 
 
     <StackLayout x:Name="MainStack"            
+                 HorizontalOptions="Fill"
                  VerticalOptions="Start">
 
         <Label 
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
             x:Name="LabelTitle"
-            HorizontalOptions="Fill"
             FontAttributes="Bold"
             Text="{Binding Text}"/>
 
         <Label 
-            HorizontalOptions="Fill"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
             Text="{Binding Location}" 
             x:Name="LabelLocation"/>
 

@@ -6,9 +6,9 @@ using Xamarin.Forms.Xaml;
 namespace MultiColumnMonkeys.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CellMonkey  
+    public partial class MonkeyCellCentered
     {
-        public CellMonkey()
+        public MonkeyCellCentered()
         {
             InitializeComponent();
         }

@@ -2,7 +2,7 @@
 using AppoMobi.Xam;
 using Xamarin.Forms;
 
-namespace MultiColumnsMonkeys.Controls
+namespace MultiColumnMonkeys.Controls
 {
     // when subclassed set your preferred caching strategy/other options for appropriate list
 

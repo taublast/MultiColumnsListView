@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace MultiColumnsMonkeys.Services
+namespace MultiColumnMonkeys.Services
 {
     public interface IDataStore<T>
     {

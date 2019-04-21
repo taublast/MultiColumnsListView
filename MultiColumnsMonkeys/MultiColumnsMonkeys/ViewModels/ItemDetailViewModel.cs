@@ -1,8 +1,8 @@
 ﻿using System;
 
-using MultiColumnsMonkeys.Models;
+using MultiColumnMonkeys.Models;
 
-namespace MultiColumnsMonkeys.ViewModels
+namespace MultiColumnMonkeys.ViewModels
 {
     public class ItemDetailViewModel : BaseViewModel
     {

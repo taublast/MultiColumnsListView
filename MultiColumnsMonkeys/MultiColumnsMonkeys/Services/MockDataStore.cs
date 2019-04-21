@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MultiColumnsMonkeys.Models;
+using MultiColumnMonkeys.Models;
 
-namespace MultiColumnsMonkeys.Services
+namespace MultiColumnMonkeys.Services
 {
     public class MockDataStore : IDataStore<Item>
     {

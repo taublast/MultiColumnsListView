@@ -1,10 +1,10 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using MultiColumnsMonkeys.Services;
-using MultiColumnsMonkeys.Views;
+using MultiColumnMonkeys.Services;
+using MultiColumnMonkeys.Views;
 
-namespace MultiColumnsMonkeys
+namespace MultiColumnMonkeys
 {
     public partial class App : Application
     {

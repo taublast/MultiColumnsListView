@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace MultiColumnsMonkeys.iOS
+namespace MultiColumnMonkeys.iOS
 {
     public class Application
     {

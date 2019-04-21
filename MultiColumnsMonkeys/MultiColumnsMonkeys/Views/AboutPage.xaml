@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MultiColumnsMonkeys.Views.AboutPage"
-             xmlns:vm="clr-namespace:MultiColumnsMonkeys.ViewModels"
+             x:Class="MultiColumnMonkeys.Views.AboutPage"
+             xmlns:vm="clr-namespace:MultiColumnMonkeys.ViewModels"
              Title="{Binding Title}">
     
     <ContentPage.BindingContext>
@@ -35,7 +35,7 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="AppName" FontAttributes="Bold" FontSize="22" />
+                                <Span Text="MultiColumn Monkeys" FontAttributes="Bold" FontSize="22" />
                                 <Span Text=" " />
                                 <Span Text="1.0" ForegroundColor="{StaticResource LightTextColor}" />
                             </FormattedString.Spans>

@@ -5,10 +5,10 @@ using System.Runtime.CompilerServices;
 
 using Xamarin.Forms;
 
-using MultiColumnsMonkeys.Models;
-using MultiColumnsMonkeys.Services;
+using MultiColumnMonkeys.Models;
+using MultiColumnMonkeys.Services;
 
-namespace MultiColumnsMonkeys.ViewModels
+namespace MultiColumnMonkeys.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {

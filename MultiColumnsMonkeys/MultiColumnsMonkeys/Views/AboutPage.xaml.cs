@@ -3,7 +3,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MultiColumnsMonkeys.Views
+namespace MultiColumnMonkeys.Views
 {
     public partial class AboutPage : ContentPage
     {

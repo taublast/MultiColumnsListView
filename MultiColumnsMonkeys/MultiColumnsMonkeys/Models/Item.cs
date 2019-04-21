@@ -1,7 +1,7 @@
 ﻿using System;
 using AppoMobi.Xam;
 
-namespace MultiColumnsMonkeys.Models
+namespace MultiColumnMonkeys.Models
 {
     public class Item : ILinkedItemWithPosition
     {

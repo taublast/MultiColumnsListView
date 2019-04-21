@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:controls="clr-namespace:MultiColumnsMonkeys.Controls;assembly=MultiColumnsMonkeys"
-             x:Class="MultiColumnsMonkeys.Views.ItemsPage"
+             xmlns:controls="clr-namespace:MultiColumnMonkeys.Controls;assembly=MultiColumnMonkeys"
+             x:Class="MultiColumnMonkeys.Views.ItemsPage"
               Title="{Binding Title}"
              x:Name="BrowseItemsPage">
 
