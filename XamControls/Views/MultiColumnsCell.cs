@@ -54,18 +54,20 @@ namespace AppoMobi.Xam
         protected void BuildCell()
         {
             var item = BindingContext as ILinkedItemWithPosition;
-         
+            var columns = _list.Columns;
+            if (columns < 1) columns = 1;
+
             _grid.ColumnDefinitions.Clear();
-            double myWidth = 100 / (double)_list.Columns;
-            Debug.WriteLine($"[CELL] Redrawing to {_list.Columns} columns..");
-            for (int a = 0; a < _list.Columns; a++)
+            double myWidth = 100 / (double)columns;
+            Debug.WriteLine($"[CELL] Redrawing to {columns} columns..");
+            for (int a = 0; a < columns; a++)
             {
                 _grid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(myWidth, GridUnitType.Star) });
             }
 
-            var itemTemplate = GetColumnCellTemplate(_list.Columns); //new DataTemplate(_childCell));
+            var itemTemplate = GetColumnCellTemplate(columns); //new DataTemplate(_childCell));
             var thisItem = item;
-            for (int col = 0; col < _list.Columns; col++)
+            for (int col = 0; col < columns; col++)
             {
                 if (thisItem == null)
                 {
@@ -76,7 +78,7 @@ namespace AppoMobi.Xam
                 var view = (View)itemTemplate.CreateContent();
                 if (view is XamCell)
                 {
-                    ((XamCell) view).Columns = _list.Columns;
+                    ((XamCell) view).Columns = columns;
                 }
                 var bindableObject = view as BindableObject;
                 if (bindableObject != null)
