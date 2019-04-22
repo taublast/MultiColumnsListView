@@ -28,7 +28,7 @@ Template 2: An empty cell template for those items residing above, in the table 
 Template 3: An optional cell template for a case we have only 1 column selected. It is not really needed, we can just use the template #1 with 1 column, but it’s an option for purists.<br>
 You could override the resulting template with your own, after our selector has produced one.<br>
 
-And you will of course we have your own cell template that will be used by the table from template #1 to fill its columns and to create your unique design.<br>
+And you will of course have your own cell template that will be used by the table from template #1 to fill its columns and to create your unique design.<br>
 
 The resulting look must be the following (2 columns):
 
