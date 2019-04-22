@@ -72,8 +72,8 @@ namespace MultiColumnMonkeys.ViewModels
                 Items.Clear();
                 var items = await DataStore.GetItemsAsync(true);
 
-                // 2 ways of doig this:
-                // links all then add
+                // 2 ways of doing this:
+                // link all then add 
                 //faster for large chunks because of observable collections updates
                 items.LinkItemsSetPositions(); // link all items, use this with simple lists too
                 foreach (var item in items)
@@ -82,7 +82,7 @@ namespace MultiColumnMonkeys.ViewModels
                 }
 
                 //or
-                // link during adding each
+                // link each during adding
                 /*
                 foreach (var item in items)
                 {
@@ -90,7 +90,7 @@ namespace MultiColumnMonkeys.ViewModels
                     Items.NotifyRowChanged(item, Columns); // <-- observable collection refresh for items inside one row
                 }
                 */
- 
+                
             }
             catch (Exception ex)
             {
