@@ -1,5 +1,4 @@
 ﻿using MultiColumnMonkeys.Models;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -25,7 +24,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Capuchin Monkey",
                 Location = "Central & South America",
                 Description = "The capuchin monkeys are New World monkeys of the subfamily Cebinae. Prior to 2011, the subfamily contained only a single genus, Cebus.",
@@ -33,7 +31,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Blue Monkey",
                 Location = "Central and East Africa",
                 Description = "The blue monkey or diademed monkey is a species of Old World monkey native to Central and East Africa, ranging from the upper Congo River basin east to the East African Rift and south to northern Angola and Zambia",
@@ -41,7 +38,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Squirrel Monkey",
                 Location = "Central & South America",
                 Description = "The squirrel monkeys are the New World monkeys of the genus Saimiri. They are the only genus in the subfamily Saimirinae. The name of the genus Saimiri is of Tupi origin, and was also used as an English name by early researchers.",
@@ -49,7 +45,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Golden Lion Tamarin",
                 Location = "Brazil",
                 Description = "The golden lion tamarin also known as the golden marmoset, is a small New World monkey of the family Callitrichidae.",
@@ -57,7 +52,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Howler Monkey",
                 Location = "South America",
                 Description = "Howler monkeys are among the largest of the New World monkeys. Fifteen species are currently recognised. Previously classified in the family Cebidae, they are now placed in the family Atelidae.",
@@ -65,7 +59,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Japanese Macaque",
                 Location = "Japan",
                 Description = "The Japanese macaque, is a terrestrial Old World monkey species native to Japan. They are also sometimes known as the snow monkey because they live in areas where snow covers the ground for months each",
@@ -73,7 +66,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Mandrill",
                 Location = "Southern Cameroon, Gabon, Equatorial Guinea, and Congo",
                 Description = "The mandrill is a primate of the Old World monkey family, closely related to the baboons and even more closely to the drill. It is found in southern Cameroon, Gabon, Equatorial Guinea, and Congo.",
@@ -81,7 +73,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Proboscis Monkey",
                 Location = "Borneo",
                 Description = "The proboscis monkey or long-nosed monkey, known as the bekantan in Malay, is a reddish-brown arboreal Old World monkey that is endemic to the south-east Asian island of Borneo.",
@@ -98,7 +89,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Capuchin Monkey",
                 Location = "Central & South America",
                 Description = "The capuchin monkeys are New World monkeys of the subfamily Cebinae. Prior to 2011, the subfamily contained only a single genus, Cebus.",
@@ -106,7 +96,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Blue Monkey",
                 Location = "Central and East Africa",
                 Description = "The blue monkey or diademed monkey is a species of Old World monkey native to Central and East Africa, ranging from the upper Congo River basin east to the East African Rift and south to northern Angola and Zambia",
@@ -114,7 +103,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Squirrel Monkey",
                 Location = "Central & South America",
                 Description = "The squirrel monkeys are the New World monkeys of the genus Saimiri. They are the only genus in the subfamily Saimirinae. The name of the genus Saimiri is of Tupi origin, and was also used as an English name by early researchers.",
@@ -122,7 +110,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Golden Lion Tamarin",
                 Location = "Brazil",
                 Description = "The golden lion tamarin also known as the golden marmoset, is a small New World monkey of the family Callitrichidae.",
@@ -130,7 +117,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Howler Monkey",
                 Location = "South America",
                 Description = "Howler monkeys are among the largest of the New World monkeys. Fifteen species are currently recognised. Previously classified in the family Cebidae, they are now placed in the family Atelidae.",
@@ -138,7 +124,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Japanese Macaque",
                 Location = "Japan",
                 Description = "The Japanese macaque, is a terrestrial Old World monkey species native to Japan. They are also sometimes known as the snow monkey because they live in areas where snow covers the ground for months each",
@@ -146,7 +131,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Mandrill",
                 Location = "Southern Cameroon, Gabon, Equatorial Guinea, and Congo",
                 Description = "The mandrill is a primate of the Old World monkey family, closely related to the baboons and even more closely to the drill. It is found in southern Cameroon, Gabon, Equatorial Guinea, and Congo.",
@@ -154,7 +138,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Proboscis Monkey",
                 Location = "Borneo",
                 Description = "The proboscis monkey or long-nosed monkey, known as the bekantan in Malay, is a reddish-brown arboreal Old World monkey that is endemic to the south-east Asian island of Borneo.",
@@ -162,7 +145,6 @@ namespace MultiColumnMonkeys.Services
             },
            new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Baboon",
                 Location = "Africa & Asia",
                 Description = "Baboons are African and Arabian Old World monkeys belonging to the genus Papio, part of the subfamily Cercopithecinae.",
@@ -170,7 +152,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Capuchin Monkey",
                 Location = "Central & South America",
                 Description = "The capuchin monkeys are New World monkeys of the subfamily Cebinae. Prior to 2011, the subfamily contained only a single genus, Cebus.",
@@ -178,7 +159,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Blue Monkey",
                 Location = "Central and East Africa",
                 Description = "The blue monkey or diademed monkey is a species of Old World monkey native to Central and East Africa, ranging from the upper Congo River basin east to the East African Rift and south to northern Angola and Zambia",
@@ -186,7 +166,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Squirrel Monkey",
                 Location = "Central & South America",
                 Description = "The squirrel monkeys are the New World monkeys of the genus Saimiri. They are the only genus in the subfamily Saimirinae. The name of the genus Saimiri is of Tupi origin, and was also used as an English name by early researchers.",
@@ -194,7 +173,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Golden Lion Tamarin",
                 Location = "Brazil",
                 Description = "The golden lion tamarin also known as the golden marmoset, is a small New World monkey of the family Callitrichidae.",
@@ -202,7 +180,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Howler Monkey",
                 Location = "South America",
                 Description = "Howler monkeys are among the largest of the New World monkeys. Fifteen species are currently recognised. Previously classified in the family Cebidae, they are now placed in the family Atelidae.",
@@ -210,7 +187,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Japanese Macaque",
                 Location = "Japan",
                 Description = "The Japanese macaque, is a terrestrial Old World monkey species native to Japan. They are also sometimes known as the snow monkey because they live in areas where snow covers the ground for months each",
@@ -218,7 +194,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Mandrill",
                 Location = "Southern Cameroon, Gabon, Equatorial Guinea, and Congo",
                 Description = "The mandrill is a primate of the Old World monkey family, closely related to the baboons and even more closely to the drill. It is found in southern Cameroon, Gabon, Equatorial Guinea, and Congo.",
@@ -226,7 +201,6 @@ namespace MultiColumnMonkeys.Services
             },
             new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Proboscis Monkey",
                 Location = "Borneo",
                 Description = "The proboscis monkey or long-nosed monkey, known as the bekantan in Malay, is a reddish-brown arboreal Old World monkey that is endemic to the south-east Asian island of Borneo.",

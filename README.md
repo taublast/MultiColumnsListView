@@ -49,13 +49,6 @@ An important note is that with our custom data selector you cannot use RecycleEl
 Another note is that you cannot use RecycleElement when you use uneven rows otherwise it will create a junky effect, but with even rows of fixed equal height it’s no problem. In this example we had uneven rows so we used RetainElement. 
 
 
-## ToDo: 
-
-Explain the code, maybe create a blog post. 
-Until then please feel free to play with the source code, custom controls are in a shared project  so you can include them easily in your own soluctions.
-The implementation is in the cross-platform project, please take a look i have left some comments inside.
-
-
 ## A Quick Note
 
 The project was created using a standart Xamarin.Forms Shell template, then adding custom controls inside. 
@@ -64,7 +57,7 @@ Microsoft.CSharp nuget was added for dynamic extensions but you can adapt to you
 
 ## Known bugs
 
-Not the ListView bug, but the app one: list page content sometimes goes a bit behind the bottom navigation Tabbar, please tell me if you know how to fix this. This hapens randomly. The similar case was that on ios it went behind the NavBar but was fixed with a 'Shell.SetSetPaddingInsets(this, true);' might be somewhat similar to this, but related to the new buttom tabedbar..
+Xamarin Image on Android is not loading our images at intended with an "ImageLoaderSourceHandler: Could not retrieve image or image data was invalid", so we are fixing this using a ported Glide image loading handler (https://github.com/jonathanpeppers/glidex). My bet is any custom loader would solve this issue, as long as xamarin out-of-the-box is not working in this case.
 
 
 ## Stay Tuned
