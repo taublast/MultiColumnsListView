@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28803.156
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiColumnsMonkeys.Android", "MultiColumnsMonkeys\MultiColumnsMonkeys.Android\MultiColumnsMonkeys.Android.csproj", "{CCC836CD-9A72-4320-B8B3-F6ADDE56FCD3}"
 EndProject
@@ -12,9 +12,6 @@ EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "XamControls", "XamControls\XamControls.shproj", "{265F7AA5-85D9-4429-975F-64220C7224C3}"
 EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		XamControls\XamControls.projitems*{265f7aa5-85d9-4429-975f-64220c7224c3}*SharedItemsImports = 13
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|iPhone = Debug|iPhone
@@ -84,5 +81,9 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {10585BCA-8A18-4231-AF04-1303273AD76A}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		XamControls\XamControls.projitems*{265f7aa5-85d9-4429-975f-64220c7224c3}*SharedItemsImports = 13
+		XamControls\XamControls.projitems*{2d4fb021-fa99-4a65-beb0-9a6b4866d3cf}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal

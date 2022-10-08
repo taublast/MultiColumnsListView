@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-using MultiColumnMonkeys.Models;
-using MultiColumnMonkeys.Views;
+﻿using MultiColumnMonkeys.Models;
 using MultiColumnMonkeys.ViewModels;
+using System;
+using Xamarin.Forms;
 
 namespace MultiColumnMonkeys.Views
 {
@@ -24,11 +16,11 @@ namespace MultiColumnMonkeys.Views
 
             //without this on iOS ListView is UNDER Shell NavBar
             // https://github.com/xamarin/Xamarin.Forms/issues/4752
-            Shell.SetSetPaddingInsets(this, true);
+            //Shell.SetSetPaddingInsets(this, true);
 
 
             BindingContext = viewModel = new ItemsViewModel(1);
-           
+
         }
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)

@@ -1,31 +1,29 @@
 ﻿using System;
-using System.Diagnostics;
-using AppoMobi.Xam;
 using Xamarin.Forms;
 
 namespace AppoMobi.Xam
 {
- public class MultiColumnsCell : ViewCell
+    public class MultiColumnsCell : ViewCell
     {
- 
+
         protected Xamarin.Forms.Grid _grid;
         private Type _childCell;
         private XamListView _list;
 
         //---------------------------------------------------------------------------------------------------------------
         public MultiColumnsCell(Type childCell, XamListView list)
-       //---------------------------------------------------------------------------------------------------------------
+        //---------------------------------------------------------------------------------------------------------------
         {
             _list = list;
             _childCell = childCell;
             _grid = new Xamarin.Forms.Grid
             {
-                ColumnSpacing = 0, 
+                ColumnSpacing = 0,
                 VerticalOptions = LayoutOptions.Fill
             };
             View = _grid;
         }
-   
+
 
         public Xamarin.Forms.Grid MainGrid
         {
@@ -59,7 +57,8 @@ namespace AppoMobi.Xam
 
             _grid.ColumnDefinitions.Clear();
             double myWidth = 100 / (double)columns;
-            Debug.WriteLine($"[CELL] Redrawing to {columns} columns..");
+
+            //Debug.WriteLine($"[CELL] Redrawing to {columns} columns..");
             for (int a = 0; a < columns; a++)
             {
                 _grid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(myWidth, GridUnitType.Star) });
@@ -78,7 +77,7 @@ namespace AppoMobi.Xam
                 var view = (View)itemTemplate.CreateContent();
                 if (view is XamCell)
                 {
-                    ((XamCell) view).Columns = columns;
+                    ((XamCell)view).Columns = columns;
                 }
                 var bindableObject = view as BindableObject;
                 if (bindableObject != null)
@@ -95,6 +94,6 @@ namespace AppoMobi.Xam
             return new DataTemplate(_childCell);
         }
     }
- 
+
 
 }

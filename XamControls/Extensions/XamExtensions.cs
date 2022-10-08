@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
 
-namespace AppoMobi.Xam 
-{ 
+namespace AppoMobi.Xam
+{
     public static class XamExtensions
     {
         public static void NotifyRowChanged<T>(this XamObservableCollection<T> list, T item, int columns) where T : ILinkedItemWithPosition
@@ -20,7 +18,7 @@ namespace AppoMobi.Xam
                 {
                     var size = 2;
                     var firstInRow = false;
-                    T maybeFirst = prev; ;
+                    var maybeFirst = prev;
                     var error = false; ;
                     while (!firstInRow)
                     {
@@ -55,9 +53,10 @@ namespace AppoMobi.Xam
 
         public static void LinkItemsSetPositions<T>(this IEnumerable<T> list) where T : ILinkedItemWithPosition
         {
-            dynamic prev = null;
-            dynamic lastItem = null;
+            ILinkedItemWithPosition prev = null;
+            ILinkedItemWithPosition lastItem = null;
             var pos = 0;
+
             foreach (var item in list)
             {
                 item.Position = pos;
@@ -90,8 +89,8 @@ namespace AppoMobi.Xam
             list.Add(item);
         }
 
-    
+
     }
 
- 
+
 }

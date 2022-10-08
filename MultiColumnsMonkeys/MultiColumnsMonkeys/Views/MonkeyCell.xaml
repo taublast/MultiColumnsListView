@@ -1,55 +1,59 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<xam:XamCell xmlns="http://xamarin.com/schemas/2014/forms" 
-            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            xmlns:xam="clr-namespace:AppoMobi.Xam;assembly=MultiColumnMonkeys"
-
-            Margin="0.5"
-            Spacing="0"
-            
-            VerticalOptions="FillAndExpand"
-
-            BackgroundColor="White"
-
-            x:Class="MultiColumnMonkeys.Views.CellMonkey">
-
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<xam:XamCell
+    x:Class="MultiColumnMonkeys.Views.CellMonkey"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:MultiColumnMonkeys.Models"
+    xmlns:xam="clr-namespace:AppoMobi.Xam;assembly=MultiColumnMonkeys"
+    Margin="0.5"
+    x:DataType="models:Item"
+    BackgroundColor="White"
+    Spacing="0"
+    VerticalOptions="FillAndExpand">
 
 
-    <StackLayout Orientation="Horizontal" VerticalOptions="Start" Margin="6">
 
-    <Image VerticalOptions="Start"
-           x:Name="MainImage"
-           BackgroundColor="WhiteSmoke"
-           HeightRequest="66"
-           WidthRequest="66"
-           Aspect="AspectFill"
-           Source="{Binding Image}"/>
+    <StackLayout
+        Margin="6"
+        Orientation="Horizontal"
+        VerticalOptions="Start">
+
+        <Image
+            x:Name="MainImage"
+            Aspect="AspectFill"
+            BackgroundColor="WhiteSmoke"
+            HeightRequest="66"
+            Source="{Binding Image}"
+            VerticalOptions="Start"
+            WidthRequest="66" />
 
 
-    <StackLayout x:Name="MainStack"            
-                 VerticalOptions="Start">
+        <StackLayout
+            x:Name="MainStack"
+            VerticalOptions="Start">
 
-        <Label 
-            x:Name="LabelTitle"
-            HorizontalOptions="Fill"
-            FontAttributes="Bold"
-            Text="{Binding Text}"/>
+            <Label
+                x:Name="LabelTitle"
+                FontAttributes="Bold"
+                HorizontalOptions="Fill"
+                Text="{Binding Text}" />
 
-        <Label 
-            HorizontalOptions="Fill"
-            Text="{Binding Location}" 
-            x:Name="LabelLocation"/>
+            <Label
+                x:Name="LabelLocation"
+                HorizontalOptions="Fill"
+                Text="{Binding Location}" />
+
+        </StackLayout>
+
 
     </StackLayout>
 
 
-</StackLayout>
+    <Label
+        Margin="7,0,7,6"
+        FontSize="Micro"
+        Text="{Binding Description}" />
 
-
-    <Label        
-           Margin="7,0,7,6"
-           FontSize="Micro"
-           Text="{Binding Description}"/>
-
-    <ContentView VerticalOptions="Fill"/>
+    <ContentView VerticalOptions="Fill" />
 
 </xam:XamCell>

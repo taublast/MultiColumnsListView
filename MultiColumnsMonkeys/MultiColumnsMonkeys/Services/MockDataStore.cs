@@ -1,8 +1,8 @@
-﻿using System;
+﻿using MultiColumnMonkeys.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MultiColumnMonkeys.Models;
 
 namespace MultiColumnMonkeys.Services
 {
@@ -15,20 +15,13 @@ namespace MultiColumnMonkeys.Services
             items = new List<Item>();
             var mockItems = new List<Item>
             {
-                //new Item { Id = Guid.NewGuid().ToString(), Text = "First item", Description="This is an item description." },
-                //new Item { Id = Guid.NewGuid().ToString(), Text = "Second item", Description="This is an item description." },
-                //new Item { Id = Guid.NewGuid().ToString(), Text = "Third item", Description="This is an item description." },
-                //new Item { Id = Guid.NewGuid().ToString(), Text = "Fourth item", Description="This is an item description." },
-                //new Item { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description." },
-                //new Item { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description." },
 
-                      new Item
+            new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Baboon",
                 Location = "Africa & Asia",
                 Description = "Baboons are African and Arabian Old World monkeys belonging to the genus Papio, part of the subfamily Cercopithecinae.",
-                Image = "http://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Papio_anubis_%28Serengeti%2C_2009%29.jpg/200px-Papio_anubis_%28Serengeti%2C_2009%29.jpg"
+                Image = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Olivebaboon.jpg/275px-Olivebaboon.jpg"
             },
             new Item
             {
@@ -94,13 +87,14 @@ namespace MultiColumnMonkeys.Services
                 Description = "The proboscis monkey or long-nosed monkey, known as the bekantan in Malay, is a reddish-brown arboreal Old World monkey that is endemic to the south-east Asian island of Borneo.",
                 Image = "http://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Proboscis_Monkey_in_Borneo.jpg/250px-Proboscis_Monkey_in_Borneo.jpg"
             },
+
+            //repeat
            new Item
             {
-                Id = Guid.NewGuid().ToString(),
                 Text = "Baboon",
                 Location = "Africa & Asia",
                 Description = "Baboons are African and Arabian Old World monkeys belonging to the genus Papio, part of the subfamily Cercopithecinae.",
-                Image = "http://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Papio_anubis_%28Serengeti%2C_2009%29.jpg/200px-Papio_anubis_%28Serengeti%2C_2009%29.jpg"
+                Image = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Olivebaboon.jpg/275px-Olivebaboon.jpg"
             },
             new Item
             {
